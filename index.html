@@ -4,119 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
-    <title>Joseph Brithday</title>
+    <link rel="stylesheet" href="gift.css">
+    <title>Gift</title>
 </head>
 <body>
-    <header>
-        
-        <section class="nav-section">
-                <div class="navigation">
-                    <nav class="navbar">
-                        <a href="#image-slider-section"><li>Greatest Memories</li></a>
-                        <a href="#birthday-letter-container"><li>My wishes</li></a>
-                        <a href=""><li>Birthdy Song and Video</li></a>
-                        <a href=""><li>Credentials</li></a>
-                    </nav>
-                </div>
-        </section>
-    </header>
     <main>
-        <section class="top-section">
-            <div id="confetti-container">
+        <section>
+            <div class='moon'>
+                <div class='crater1'></div>
+                <div class='crater2'></div>
+                <div class='crater3'></div>
             </div>
-            <div class="stars">
-                <h2 id="bday-text"></h2>
-                <div class="star star1"></div>
-                <div class="star star2"></div>
-                <div class="star star3"></div>
-                <div class="star star4"></div>
-                <div class="star star5"></div>
-                <div class="star star6"></div>
-                <div class="star star7"></div>
-                <div class="star star8"></div>
-            </div>
-        </section>
-        <section id="birthday-letter-container">
-            <div class="birthday-letter">
-                <h2 id="clickCard" class="title">Click this card</h2>
-                <div class="body">
-                 <div class="birthdayCard">
-                <div class="cardFront"><h3 class="happy">HAPPY BIRTHDAY!</h3>
-                <div class="balloons">
-                  <div class="balloonOne"></div>
-                  <div class="balloonTwo"></div>
-                  <div class="balloonThree"></div>
-                  <div class="balloonFour"></div>
+            
+            <canvas id="canvas"></canvas>
+            
+            <div id="sea"></div>
+            <div id="beach"></div>
+            
+            <img src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png" alt="Jumping-people" id="people" />
+            
+            <div id="merrywrap" class="merrywrap">
+                <div class="giftbox">
+                    <div class="cover">
+                        <div></div>
+                    </div>
+                    
+                    <div class="box"></div>
                 </div>
-                </div>
-                <div class="cardInside">
-                    <h3 class="back">HAPPY BIRTHDAY!</h3>
-                    <p contenteditable="true">,ابن خالتي جوزيف اللعزيز</p> 
-                    <p contenteditable="true"> كل عام و انت بألف خير و صحة و سعادة , اتمنى لك ايام سعيدة في حياتك و عقبال ال120</p>
-                    <p contenteditable="true" class="name">أمير</p>
-                  </div>
-                </div>
-                </div>
-            </div>
-        </section>
-        <section id="image-slider-section">
-            <h1 class="title">Greatest Memories</h1>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 6</div>
-                    <img src="img1.jpg" style="width:100%">
-                    <div class="text">Caption One</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 6</div>
-                    <img src="img2.jpg" style="width:100%">
-                    <div class="text">Caption Two</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 6</div>
-                    <img src="img3.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 6</div>
-                    <img src="img4.jpg" style="width:100%">
-                    <div class="text">Caption Four</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="img5.jpg" style="width:100%">
-                    <div class="text">Caption Five</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">6 / 6</div>
-                    <img src="img6.jpg" style="width:100%">
-                    <div class="text">Caption Six</div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </section>
-        <section class="video-bdayvid-section">
-            <h1 class="title">Birthday Song and Video</h1>
-            <div class="video-container">
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/zEZoTGGeH1A" title="JOSEPH Birthday Song – Happy Birthday Joseph" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+            <script src="index.js"></script>
         </section>
     </main>
-    <footer>
-        <div class="left">SUI</div>
-        <div class="center">You'll recieve your gift later</div>
-        <div class="right">Made by : Amir Khoury</div>
-    </footer>
 </body>
-<script src="app.js"></script>
 </html>
